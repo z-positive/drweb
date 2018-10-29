@@ -3,7 +3,7 @@ class Handle:
    
 
     objects = {}
-    transactions = []
+    
 
     def __init__(self, query):
         self.elements = query.split(' ')
@@ -14,7 +14,6 @@ class Handle:
     def router(self, action):
         if action == 'SET':
             self.objects[self.elements[1]] = self.elements[2]
-            #self.trnsctns(self.objects[self.elements[1]],self.elements[2])
         elif action == 'GET':
             print(self.objects[self.elements[1]])
         elif action == 'UNSET':
