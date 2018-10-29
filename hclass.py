@@ -1,6 +1,6 @@
 class Handle:
 
-    #act = ('SET', 'GET', 'UNSET', 'COUNTS', 'FIND', 'END')
+   
 
     objects = {}
     transactions = []
@@ -26,20 +26,7 @@ class Handle:
             self.find(self.elements[1])
         elif action == 'END':
             exit()
-        #elif action == 'BEGIN':
-        #    if self.begin == 0:
-        #        self.begin == 1
-        #    else:
-        #        print('Транзакция')
-
-
-    #def trnsctns(self,item,data):
-    #    try:
-    #        self.transactions.append({item:data})
-    #    except:
-    #        print('лог изменений не создан')
-
-
+       
 
     def counts(self, data):
         i=0
